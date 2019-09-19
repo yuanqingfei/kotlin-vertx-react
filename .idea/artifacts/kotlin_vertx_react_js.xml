@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kotlin-vertx-react-js">
+    <output-path>/var/docker/project/kotlin-vertx-react/build/libs</output-path>
+    <root id="archive" name="kotlin-vertx-react-js.jar">
+      <element id="module-output" name="kotlin-vertx-react.jsMain" />
+    </root>
+  </artifact>
+</component>
