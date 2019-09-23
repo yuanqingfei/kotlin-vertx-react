@@ -2,30 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b699f7-0677-47b8-acb5-b392c0328a12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/kotlin_vertx_react_js.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/kotlin_vertx_react_jvm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinScripting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.commonTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsMain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/artifacts/kotlin_vertx_react_js.xml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/artifacts/kotlin_vertx_react_jvm.xml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/kotlinScripting.xml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.commonTest.iml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsMain.iml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlin-vertx-react.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/kotlin-vertx-react.iml" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules.xml" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/SampleJvm.kt" beforeDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.gitignore" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gitignore" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/gradle.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/kotlinc.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/src/commonMain/kotlin/sample/Sample.kt" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/src/commonMain/kotlin/sample/Sample.kt" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/SampleJvm.kt" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="/var/docker/project/kotlin-vertx-react/.gradle/" />
-    <ignored path="/var/docker/project/kotlin-vertx-react/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,28 +48,6 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle.kts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="66" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>'</find>
@@ -68,58 +57,20 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="/var/docker/project/kotlin-vertx-react" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle.kts" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="526" />
-    <option name="y" value="101" />
-    <option name="width" value="1644" />
-    <option name="height" value="887" />
-  </component>
+  <component name="ProjectId" id="1R2VJZRKkV4XZ5LtSnej8ntxSCV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="kotlin-vertx-react" type="58d84e3e:PackageViewProjectNode" />
-              <item name="kotlin-vertx-react" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="kotlin-vertx-react" type="58d84e3e:PackageViewProjectNode" />
-              <item name="kotlin-vertx-react" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="kotlin-vertx-react.commonMain" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="kotlin-vertx-react" type="58d84e3e:PackageViewProjectNode" />
-              <item name="kotlin-vertx-react" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="kotlin-vertx-react.commonMain" type="616d4139:PackageViewModuleNode" />
-              <item name="sample" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568863936730" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568864500810" />
+    <property name="kotlin.use.new.inference.for.ide.analysis.v2" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19439252" />
     <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RunDashboard">
@@ -211,93 +162,17 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19845219" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32939914" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.2864807" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2498618" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="66" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
