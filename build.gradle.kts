@@ -1,6 +1,5 @@
-import org.gradle.internal.impldep.aQute.bnd.build.Run
-import org.gradle.jvm.tasks.Jar
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack
+import java.io.File
 
 plugins {
 //    id("io.vertx.vertx-plugin") version "0.8.0"
@@ -14,11 +13,6 @@ val rxkotlin_version = "2.4.0"
 val vertx_version = "3.8.1"
 val logback_version = "1.2.3"
 
-tasks.withType(KotlinCompile::class).all {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
 
 //vertx {
 //    vertxVersion = "${vertx_version}"
@@ -26,14 +20,32 @@ tasks.withType(KotlinCompile::class).all {
 //}
 
 kotlin {
-    jvm(
-    )
+    jvm{
+        val main by compilations.getting {
+            kotlinOptions {
+                // Setup the Kotlin compiler options for the 'main' compilation:
+                jvmTarget = "1.8"
+            }
+
+            compileKotlinTask // get the Kotlin task 'compileKotlinJvm'
+            output // get the main compilation output
+        }
+
+        compilations["test"].runtimeDependencyFiles
+    }
     js {
         browser {
         }
     }
     sourceSets {
         val commonMain by getting {
+            languageSettings.apply {
+                languageVersion = "1.3" // possible values: '1.0', '1.1', '1.2', '1.3'
+                apiVersion = "1.3" // possible values: '1.0', '1.1', '1.2', '1.3'
+                //enableLanguageFeature("InlineClasses") // language feature name
+                //useExperimentalAnnotation("kotlin.ExperimentalUnsignedTypes") // annotation FQ-name
+                progressiveMode = true // false by default
+            }
             dependencies {
                 implementation(kotlin("stdlib-common"))
             }
@@ -52,7 +64,7 @@ kotlin {
                 implementation("io.vertx:vertx-web:${vertx_version}")
 
                 // Vertx + Kotlin
-                implementation("io.vertx:vertx-lang-kotlin:$vertx_version")
+                implementation("io.vertx:vertx-lang-kotlin:${vertx_version}")
 
                 // RxJava 2 + Kotlin
                 implementation("io.reactivex.rxjava2:rxkotlin:${rxkotlin_version}")
@@ -80,15 +92,21 @@ kotlin {
     }
 }
 
-//tasks.named<Jar>("jvmJar") {
-//    dependsOn(jsBrowserWebpack)
-//    from(File(jsBrowserWebpack.entry.name, jsBrowserWebpack.outputPath))
-//}
+tasks{
+    val jsBrowserWebpack by getting(KotlinWebpack::class)
+    val jvmJar by getting(Jar::class){
+        dependsOn(jsBrowserWebpack)
+        from(File(jsBrowserWebpack.entry.name, jsBrowserWebpack.destinationDirectory?.canonicalPath))
+    }
+    val jvmRuntimeClasspath by configurations.getting
+    val run by creating(JavaExec::class){
+        dependsOn(jvmJar)
+        group = "application"
+        main = "sample.MainKt"
+        classpath(jvmRuntimeClasspath, jvmJar)
+        args = List<String?>(0, { _ -> "" })
+    }
+}
 
-//tasks.named("myRun")(type: JavaExec::class) {
-//    group = "application"
-//    main = "sample.SampleJvmKt"
-//    classpath(configurations.jvmRuntimeClasspath, jvmJar)
-//    args = []
-//}
+
 

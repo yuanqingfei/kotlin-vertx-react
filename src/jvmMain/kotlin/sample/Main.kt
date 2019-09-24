@@ -3,6 +3,7 @@ package sample
 import io.vertx.core.AbstractVerticle
 import io.vertx.core.Future
 import io.vertx.core.Handler
+import io.vertx.core.Vertx
 import io.vertx.core.http.HttpServerResponse
 import io.vertx.core.json.Json
 import io.vertx.ext.web.Router
@@ -15,6 +16,10 @@ actual class Sample {
 
 actual object Platform {
     actual val name: String = "JVM"
+}
+
+fun main() {
+    Vertx.vertx().deployVerticle(MainVerticle())
 }
 
 @Suppress("unused")

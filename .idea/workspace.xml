@@ -2,40 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b699f7-0677-47b8-acb5-b392c0328a12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlin-vertx-react.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/kotlin-vertx-react.iml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules.xml" afterDir="false" />
-      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/SampleJvm.kt" beforeDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/.gitignore" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/gradle.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/kotlinc.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/src/commonMain/kotlin/sample/Sample.kt" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/src/commonMain/kotlin/sample/Sample.kt" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/SampleJvm.kt" beforeDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Main.kt" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,10 +54,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568864500810" />
     <property name="kotlin.use.new.inference.for.ide.analysis.v2" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kotlin-vertx-react4" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19439252" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
