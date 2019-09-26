@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
@@ -15,9 +14,8 @@
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.commonMain.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" afterDir="false" />
@@ -33,6 +31,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -58,7 +63,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19439252" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

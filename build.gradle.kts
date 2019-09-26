@@ -66,8 +66,8 @@ kotlin {
                 // Vertx + Kotlin
                 implementation("io.vertx:vertx-lang-kotlin:${vertx_version}")
 
-                // RxJava 2 + Kotlin
-                implementation("io.reactivex.rxjava2:rxkotlin:${rxkotlin_version}")
+                // Vertx + Coroutine
+                implementation("io.vertx:vertx-lang-kotlin-coroutines:${vertx_version}")
 
                 implementation("ch.qos.logback:logback-classic:$logback_version")
             }
@@ -82,6 +82,9 @@ kotlin {
             dependencies {
                 implementation(kotlin("stdlib-js"))
                 implementation(npm("react", "^16.8.1"))
+                implementation(npm("react-dom", "^16.8.1"))
+                implementation(npm("kotlinx-html-js"))
+                implementation(npm("material-components-web"))
             }
         }
         val jsTest by getting  {
@@ -104,8 +107,10 @@ tasks{
         group = "application"
         main = "sample.MainKt"
         classpath(jvmRuntimeClasspath, jvmJar)
-        args = List<String?>(0, { _ -> "" })
+        args = mutableListOf<String>()
     }
+
+
 }
 
 

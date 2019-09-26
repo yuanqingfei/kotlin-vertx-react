@@ -1,13 +1,15 @@
 package sample
 
-import io.vertx.core.AbstractVerticle
-import io.vertx.core.Future
 import io.vertx.core.Handler
 import io.vertx.core.Vertx
 import io.vertx.core.http.HttpServerResponse
 import io.vertx.core.json.Json
 import io.vertx.ext.web.Router
 import io.vertx.ext.web.RoutingContext
+import io.vertx.ext.web.handler.StaticHandler
+import io.vertx.kotlin.core.deployVerticleAwait
+import io.vertx.kotlin.core.http.listenAwait
+import io.vertx.kotlin.coroutines.CoroutineVerticle
 
 
 actual class Sample {
@@ -18,36 +20,37 @@ actual object Platform {
     actual val name: String = "JVM"
 }
 
-fun main() {
-    Vertx.vertx().deployVerticle(MainVerticle())
+suspend fun main() {
+    try {
+        Vertx.vertx().deployVerticleAwait(MainVerticle())
+        println("Application started")
+    } catch (exception: Throwable) {
+        println("Could not start application")
+        exception.printStackTrace()
+    }
 }
 
-@Suppress("unused")
-class MainVerticle : AbstractVerticle() {
-
-    override fun start(startFuture: Future<Void>) {
+class MainVerticle : CoroutineVerticle() {
+    override suspend fun start() {
         val router = createRouter()
 
+        // Start the server
         vertx.createHttpServer()
             .requestHandler(router)
-            .listen(config().getInteger("http.port", 8080)) { result ->
-                if (result.succeeded()) {
-                    startFuture.complete()
-                } else {
-                    startFuture.fail(result.cause())
-                }
-            }
+            .listenAwait(config.getInteger("http.port", 8080))
     }
 
     private fun createRouter() = Router.router(vertx).apply {
         get("/").handler(handlerRoot)
+        get("/islands").handler(handlerIslands)
+        get("/countries").handler(handlerCountries)
+        get().handler(StaticHandler.create("kotlin-vertx-react.js"));
     }
 
     //
     // Handlers
-
     val handlerRoot = Handler<RoutingContext> { req ->
-        req.response().end(hello())
+        req.response().end(hello() + "  /  " + Sample().checkMe())
     }
 
     val handlerIslands = Handler<RoutingContext> { req ->
