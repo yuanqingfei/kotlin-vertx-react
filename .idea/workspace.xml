@@ -2,24 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b699f7-0677-47b8-acb5-b392c0328a12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Route.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/UserController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/UserService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Users.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Utils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/resources/conf/application.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/resources/webroot/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/resources/webroot/kotlin-vertx-react.js" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Route.kt" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/UserController.kt" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/UserService.kt" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Users.kt" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Utils.kt" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/resources/conf/application.json" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/resources/webroot/index.html" afterDir="false" />
+      <change afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/resources/webroot/kotlin-vertx-react.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonMain/kotlin/sample/Sample.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvmMain/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/resources/logback.xml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jsTest.iml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmMain.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/modules/-354306277/kotlin-vertx-react.jvmTest.iml" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/README.md" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/README.md" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/build.gradle.kts" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/src/commonMain/kotlin/sample/Sample.kt" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/src/commonMain/kotlin/sample/Sample.kt" afterDir="false" />
       <change beforePath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Main.kt" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/kotlin/sample/Main.kt" afterDir="false" />
+      <change beforePath="/var/docker/project/kotlin-vertx-react/src/jvmMain/resources/logback.xml" beforeDir="false" afterPath="/var/docker/project/kotlin-vertx-react/src/jvmMain/resources/logback.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +61,14 @@
       </state>
     </system>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>'</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>&quot;</replace>
-    </replaceStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="/var/docker/project/kotlin-vertx-react" />
@@ -56,14 +79,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568864500810" />
     <property name="kotlin.use.new.inference.for.ide.analysis.v2" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kotlin-vertx-react4" />
+    <property name="last_opened_file_path" value="/var/docker/project/kotlin-vertx-react/src/jvmMain/resources/webroot" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19439252" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="/var/docker/project/kotlin-vertx-react/src/jvmMain/resources/webroot" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -97,6 +126,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sample.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="kotlin-vertx-react.jvmMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="sample.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -115,6 +157,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.sample.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="modificationStamps">
@@ -153,6 +200,9 @@
       <updated>1568861324930</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

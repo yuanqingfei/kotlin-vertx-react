@@ -1,6 +1,8 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack
 import java.io.File
 
+//version = "1.0.0"
+
 plugins {
 //    id("io.vertx.vertx-plugin") version "0.8.0"
     kotlin("multiplatform") version "1.3.50"
@@ -12,6 +14,7 @@ repositories {
 val rxkotlin_version = "2.4.0"
 val vertx_version = "3.8.1"
 val logback_version = "1.2.3"
+val koin_version = "2.0.1"
 
 
 //vertx {
@@ -60,15 +63,29 @@ kotlin {
             dependencies {
                 implementation(kotlin("stdlib-jdk8"))
 
-                // Vertx
-                implementation("io.vertx:vertx-web:${vertx_version}")
-
                 // Vertx + Kotlin
-                implementation("io.vertx:vertx-lang-kotlin:${vertx_version}")
+                implementation("io.vertx:vertx-lang-kotlin:$vertx_version")
 
                 // Vertx + Coroutine
-                implementation("io.vertx:vertx-lang-kotlin-coroutines:${vertx_version}")
+                implementation("io.vertx:vertx-lang-kotlin-coroutines:$vertx_version")
 
+                // KOIN for DI
+                implementation("org.koin:koin-core:$koin_version")
+
+                // Vertx Web
+                implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.7")
+                implementation("io.vertx:vertx-web:$vertx_version")
+
+                // Vertx Config
+                implementation("io.vertx:vertx-config:$vertx_version")
+
+                // JDBC
+                implementation("org.jetbrains.exposed:exposed:0.17.4")
+
+                // H2
+                implementation("com.h2database:h2:1.4.197")
+
+                // Log
                 implementation("ch.qos.logback:logback-classic:$logback_version")
             }
         }
@@ -99,9 +116,13 @@ tasks{
     val jsBrowserWebpack by getting(KotlinWebpack::class)
     val jvmJar by getting(Jar::class){
         dependsOn(jsBrowserWebpack)
+        println("parent: " + jsBrowserWebpack.entry.name)
+        println("file: " + jsBrowserWebpack.destinationDirectory?.canonicalPath)
+//        from(File(jsBrowserWebpack.destinationDirectory?.canonicalPath, jsBrowserWebpack.entry.name))
         from(File(jsBrowserWebpack.entry.name, jsBrowserWebpack.destinationDirectory?.canonicalPath))
     }
     val jvmRuntimeClasspath by configurations.getting
+//    println(jvmRuntimeClasspat)
     val run by creating(JavaExec::class){
         dependsOn(jvmJar)
         group = "application"
