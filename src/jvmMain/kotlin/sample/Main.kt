@@ -5,16 +5,15 @@ import io.vertx.config.ConfigRetriever
 import io.vertx.config.ConfigRetrieverOptions
 import io.vertx.config.ConfigStoreOptions
 import io.vertx.core.Vertx
-import io.vertx.core.http.HttpServer
 import io.vertx.core.json.Json
-import io.vertx.core.json.JsonObject
 import io.vertx.ext.web.Router
 import io.vertx.ext.web.handler.BodyHandler
+import io.vertx.kotlin.config.getConfigAwait
 import io.vertx.kotlin.core.deployVerticleAwait
+import io.vertx.kotlin.core.http.listenAwait
 import io.vertx.kotlin.core.json.json
 import io.vertx.kotlin.core.json.obj
 import io.vertx.kotlin.coroutines.CoroutineVerticle
-import io.vertx.kotlin.coroutines.awaitResult
 import sample.Route.coroutineHandler
 
 
@@ -41,13 +40,11 @@ class WebVerticle : CoroutineVerticle() {
     override suspend fun start() {
         Json.mapper.registerModule(KotlinModule())
 
-        val config = awaitResult<JsonObject> {
-            val hocon = ConfigStoreOptions()
-                .setConfig(json { obj("path" to "conf/application.json") })
-                .setType("file")
-                .setFormat("json")
-            ConfigRetriever.create(vertx, ConfigRetrieverOptions().addStore(hocon)).getConfig(it)
-        }
+        val hocon = ConfigStoreOptions()
+            .setConfig(json { obj("path" to "conf/application.json") })
+            .setType("file")
+            .setFormat("json")
+        val config = ConfigRetriever.create(vertx, ConfigRetrieverOptions().addStore(hocon)).getConfigAwait()
 
         val router = Router.router(vertx)
         val userService = UserService(vertx, config.getJsonObject("db").getJsonObject("sql"))
@@ -61,14 +58,8 @@ class WebVerticle : CoroutineVerticle() {
         router.get("/user/:id").coroutineHandler { controller.getById(it) }
         router.delete("/user/:id").coroutineHandler { controller.deleteById(it) }
 
-        awaitResult<HttpServer> {
-            vertx.createHttpServer()
-                .requestHandler(router::accept)
-                .listen(8080)
-        }
-    }
-
-    override suspend fun stop() {
-        super.stop();
+        vertx.createHttpServer()
+            .requestHandler(router::accept)
+            .listenAwait(8080)
     }
 }

@@ -1,24 +1,27 @@
 package sample
 
-import io.vertx.core.Handler
 import io.vertx.core.Promise
 import io.vertx.core.Vertx
-import io.vertx.kotlin.coroutines.awaitResult
+import io.vertx.kotlin.core.executeBlockingAwait
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
+fun getLogger(): Logger = LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME)
 
-suspend fun <T> execBlocking(vx: Vertx, fn: () -> T): T =
+fun getLogger(name: String): Logger = LoggerFactory.getLogger(name)
+
+suspend fun <T> execBlocking(vx: Vertx, fn: () -> T): T? =
     withContext(Dispatchers.Default) {
-        val handler = Handler { promise: Promise<T> ->
+        vx.executeBlockingAwait<T> { promise: Promise<T> ->
             try {
                 promise.complete(fn())
             } catch (t: Throwable) {
                 promise.fail(t)
             }
         }
-        awaitResult<T> { vx.executeBlocking(handler, it) }
     }
 
 suspend fun <T> retry(times: Int, interval: Long, fn: () -> T?): T? {

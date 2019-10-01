@@ -6,14 +6,11 @@ import io.vertx.core.json.JsonObject
 import io.vertx.ext.web.RoutingContext
 import io.vertx.kotlin.core.json.Json
 import io.vertx.kotlin.core.json.array
-import io.vertx.kotlin.coroutines.awaitResult
-import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import org.slf4j.LoggerFactory.getLogger
 import java.lang.Exception
 
 class UserController(private val userService: UserService) {
-    private val logger = LoggerFactory.getLogger(javaClass)
+    private val logger = getLogger("UserController")
 
     suspend fun create(ctx: RoutingContext) {
         try{
@@ -61,7 +58,7 @@ class UserController(private val userService: UserService) {
     suspend fun getAll(ctx: RoutingContext) {
         logger.info("getting all users")
         val users = userService.getAll()
-        val jsons = Json.array(users.map(JsonObject::mapFrom))
+        val jsons = Json.array(users?.map(JsonObject::mapFrom))
         ctx.response()
             .putHeader(CONTENT_TYPE, APPLICATION_JSON)
             .end(jsons.encode())

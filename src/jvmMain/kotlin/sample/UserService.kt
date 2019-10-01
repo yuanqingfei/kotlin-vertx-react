@@ -10,6 +10,7 @@ import org.jetbrains.exposed.sql.SchemaUtils.createMissingTablesAndColumns
 import org.jetbrains.exposed.sql.transactions.transaction
 
 class UserService(private val vx: Vertx, config: JsonObject) {
+    private val logger = getLogger("UserService")
     init {
         Database.connect(
             url = config.getString("url"),
@@ -27,15 +28,15 @@ class UserService(private val vx: Vertx, config: JsonObject) {
         }
     }
 
-    suspend fun create(user: User): Unit = execBlocking(vx) {
+    suspend fun create(user: User): Unit? = execBlocking(vx) {
         transaction {
-            println("create begin")
+            logger.info("create begin")
             Users.insert { Users.of(user, it) }
-            println("create end")
+            logger.info("create end")
         }
     }
 
-    suspend fun updateById(user: User, id: Int): Unit = execBlocking(vx) {
+    suspend fun updateById(user: User, id: Int): Int? = execBlocking(vx) {
         transaction {
             Users.update({ Users.id eq id }) {
                 Users.of(user, it)
@@ -43,19 +44,19 @@ class UserService(private val vx: Vertx, config: JsonObject) {
         }
     }
 
-    suspend fun getById(id: Int): User = execBlocking(vx) {
+    suspend fun getById(id: Int): User? = execBlocking(vx) {
         transaction {
             Users.map(Users.select { Users.id eq id }.first())
         }
     }
 
-    suspend fun deleteById(id: Int): Unit = execBlocking(vx) {
+    suspend fun deleteById(id: Int): Int? = execBlocking(vx) {
         transaction {
             Users.deleteWhere { Users.id eq id }
         }
     }
 
-    suspend fun getAll(): List<User> = execBlocking(vx) {
+    suspend fun getAll(): List<User>? = execBlocking(vx) {
         transaction {
             Users.selectAll().map(Users::map)
         }
