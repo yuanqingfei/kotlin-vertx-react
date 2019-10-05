@@ -9,7 +9,7 @@ import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SchemaUtils.createMissingTablesAndColumns
 import org.jetbrains.exposed.sql.transactions.transaction
 
-class UserService(private val vx: Vertx, config: JsonObject) {
+class UserService(private val vx: Vertx, private val config: JsonObject) {
     private val logger = getLogger("UserService")
     init {
         Database.connect(
