@@ -1,6 +1,7 @@
 package sample
 
 import com.fasterxml.jackson.module.kotlin.KotlinModule
+import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import io.vertx.config.ConfigRetriever
 import io.vertx.config.ConfigRetrieverOptions
 import io.vertx.config.ConfigStoreOptions
@@ -84,7 +85,9 @@ suspend fun main() {
 
 class WebVerticle(private val userController: UserController) : CoroutineVerticle() {
     override suspend fun start() {
-        Json.mapper.registerModule(KotlinModule())
+        Json.mapper.registerKotlinModule()
+        Json.prettyMapper.registerKotlinModule()
+//            .registerModule(KotlinModule())
         val router = Router.router(vertx)
         router.route().handler(BodyHandler.create())
         router.post("/user").coroutineHandler { userController.create(it) }

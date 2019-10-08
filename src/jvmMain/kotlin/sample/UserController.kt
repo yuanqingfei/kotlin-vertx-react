@@ -1,5 +1,6 @@
 package sample
 
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import io.netty.handler.codec.http.HttpHeaderNames.CONTENT_TYPE
 import io.netty.handler.codec.http.HttpHeaderValues.APPLICATION_JSON
 import io.vertx.core.json.JsonObject
@@ -12,14 +13,13 @@ import java.lang.Exception
 class UserController(private val userService: UserService) {
     private val logger = getLogger("UserController")
 
+
     suspend fun create(ctx: RoutingContext) {
         try{
             logger.info("creating user")
             val userJson = ctx.bodyAsJson
             println("user: " + userJson)
             val user = userJson.mapTo(User::class.java)
-            println("user2: " + user)
-//        awaitResult<SendMessageRequest, SendMessageResult> { sqs.sendMessageAsync(queueUrl, userJson.encode(), it) }
             userService.create(user)
             ctx.response().end()
         } catch(e:Exception){
